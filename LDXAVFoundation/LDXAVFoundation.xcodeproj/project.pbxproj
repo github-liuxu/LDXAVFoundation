@@ -12,7 +12,23 @@
 		0C774F691F3656350022A26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F671F3656350022A26D /* Main.storyboard */; };
 		0C774F6B1F3656350022A26D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F6A1F3656350022A26D /* Assets.xcassets */; };
 		0C774F6E1F3656350022A26D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F6C1F3656350022A26D /* LaunchScreen.storyboard */; };
+		0C774F7C1F3657880022A26D /* LDXEditing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C774F7B1F3657880022A26D /* LDXEditing.framework */; };
+		0C774F7D1F3657880022A26D /* LDXEditing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C774F7B1F3657880022A26D /* LDXEditing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0C774F7E1F3657880022A26D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0C774F7D1F3657880022A26D /* LDXEditing.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C774F601F3656350022A26D /* LDXAVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDXAVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		0C774F6A1F3656350022A26D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C774F6D1F3656350022A26D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C774F6F1F3656350022A26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C774F7B1F3657880022A26D /* LDXEditing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LDXEditing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C774F7C1F3657880022A26D /* LDXEditing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,7 @@
 		0C774F571F3656350022A26D = {
 			isa = PBXGroup;
 			children = (
+				0C774F7B1F3657880022A26D /* LDXEditing.framework */,
 				0C774F621F3656350022A26D /* LDXAVFoundation */,
 				0C774F611F3656350022A26D /* Products */,
 			);
@@ -74,6 +93,7 @@
 				0C774F5C1F3656350022A26D /* Sources */,
 				0C774F5D1F3656350022A26D /* Frameworks */,
 				0C774F5E1F3656350022A26D /* Resources */,
+				0C774F7E1F3657880022A26D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LDXAVFoundation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liudongxu.LDXAVFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LDXAVFoundation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liudongxu.LDXAVFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
