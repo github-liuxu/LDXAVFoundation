@@ -4,4 +4,7 @@
    <FileRef
       location = "group:LDXAVFoundation/LDXAVFoundation.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:LDXEditing/LDXEditing.xcodeproj">
+   </FileRef>
 </Workspace>
