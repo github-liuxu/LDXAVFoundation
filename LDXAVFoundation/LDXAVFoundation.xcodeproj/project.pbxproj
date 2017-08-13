@@ -12,8 +12,6 @@
 		0C774F691F3656350022A26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F671F3656350022A26D /* Main.storyboard */; };
 		0C774F6B1F3656350022A26D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F6A1F3656350022A26D /* Assets.xcassets */; };
 		0C774F6E1F3656350022A26D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F6C1F3656350022A26D /* LaunchScreen.storyboard */; };
-		0CA8A81C1F40A60600393C0B /* aa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA8A81B1F40A60600393C0B /* aa.mp4 */; };
-		0CA8A81E1F40A65800393C0B /* lvyexianzong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA8A81D1F40A65800393C0B /* lvyexianzong.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,8 +35,6 @@
 		0C774F6A1F3656350022A26D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C774F6D1F3656350022A26D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C774F6F1F3656350022A26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CA8A81B1F40A60600393C0B /* aa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aa.mp4; sourceTree = "<group>"; };
-		0CA8A81D1F40A65800393C0B /* lvyexianzong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lvyexianzong.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				0C774F631F3656350022A26D /* AppDelegate.swift */,
-				0CA8A81B1F40A60600393C0B /* aa.mp4 */,
-				0CA8A81D1F40A65800393C0B /* lvyexianzong.mp3 */,
 				0C774F651F3656350022A26D /* ViewController.swift */,
 				0C774F671F3656350022A26D /* Main.storyboard */,
 				0C774F6A1F3656350022A26D /* Assets.xcassets */,
@@ -146,8 +140,6 @@
 				0C774F6E1F3656350022A26D /* LaunchScreen.storyboard in Resources */,
 				0C774F6B1F3656350022A26D /* Assets.xcassets in Resources */,
 				0C774F691F3656350022A26D /* Main.storyboard in Resources */,
-				0CA8A81C1F40A60600393C0B /* aa.mp4 in Resources */,
-				0CA8A81E1F40A65800393C0B /* lvyexianzong.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
