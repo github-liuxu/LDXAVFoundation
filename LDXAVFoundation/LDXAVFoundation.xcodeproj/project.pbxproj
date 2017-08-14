@@ -12,6 +12,10 @@
 		0C774F691F3656350022A26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F671F3656350022A26D /* Main.storyboard */; };
 		0C774F6B1F3656350022A26D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F6A1F3656350022A26D /* Assets.xcassets */; };
 		0C774F6E1F3656350022A26D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F6C1F3656350022A26D /* LaunchScreen.storyboard */; };
+		0CA8A8201F41EB0000393C0B /* lvyexianzong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA8A81F1F41EB0000393C0B /* lvyexianzong.mp3 */; };
+		0CA8A8221F41EC3200393C0B /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA8A8211F41EC3200393C0B /* video.mp4 */; };
+		0CA8A8241F41F01C00393C0B /* LDXCompositionVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8A8231F41F01C00393C0B /* LDXCompositionVideo.swift */; };
+		0CA8A8261F41FEB600393C0B /* LDXExportComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8A8251F41FEB600393C0B /* LDXExportComposition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +39,10 @@
 		0C774F6A1F3656350022A26D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C774F6D1F3656350022A26D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C774F6F1F3656350022A26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CA8A81F1F41EB0000393C0B /* lvyexianzong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lvyexianzong.mp3; sourceTree = "<group>"; };
+		0CA8A8211F41EC3200393C0B /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		0CA8A8231F41F01C00393C0B /* LDXCompositionVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDXCompositionVideo.swift; sourceTree = "<group>"; };
+		0CA8A8251F41FEB600393C0B /* LDXExportComposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDXExportComposition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 			children = (
 				0C774F631F3656350022A26D /* AppDelegate.swift */,
 				0C774F651F3656350022A26D /* ViewController.swift */,
+				0CA8A8231F41F01C00393C0B /* LDXCompositionVideo.swift */,
+				0CA8A81F1F41EB0000393C0B /* lvyexianzong.mp3 */,
+				0CA8A8251F41FEB600393C0B /* LDXExportComposition.swift */,
+				0CA8A8211F41EC3200393C0B /* video.mp4 */,
 				0C774F671F3656350022A26D /* Main.storyboard */,
 				0C774F6A1F3656350022A26D /* Assets.xcassets */,
 				0C774F6C1F3656350022A26D /* LaunchScreen.storyboard */,
@@ -137,6 +149,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA8A8221F41EC3200393C0B /* video.mp4 in Resources */,
+				0CA8A8201F41EB0000393C0B /* lvyexianzong.mp3 in Resources */,
 				0C774F6E1F3656350022A26D /* LaunchScreen.storyboard in Resources */,
 				0C774F6B1F3656350022A26D /* Assets.xcassets in Resources */,
 				0C774F691F3656350022A26D /* Main.storyboard in Resources */,
@@ -150,8 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA8A8261F41FEB600393C0B /* LDXExportComposition.swift in Sources */,
 				0C774F661F3656350022A26D /* ViewController.swift in Sources */,
 				0C774F641F3656350022A26D /* AppDelegate.swift in Sources */,
+				0CA8A8241F41F01C00393C0B /* LDXCompositionVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
