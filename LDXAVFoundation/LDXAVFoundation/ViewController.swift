@@ -18,9 +18,9 @@ class ViewController: UIViewController {
         let audioAsset = ldxLoadlocalAsset(name: "lvyexianzong", extr: "mp3")
         
         let com = LDXCompositionVideo()
-        com.addVideoTrack(videoAsset: avAsset)
-        com.addVideoTrack(videoAsset: avAsset)
-        com.addAudioTrack(audioAsset: audioAsset)
+        com.addVideoTrack(videoAsset: avAsset, timeRange: LDXTimeRangeMake(start: 1, duration: 15))
+        com.addAudioTrack(audioAsset: audioAsset, timeRange: LDXTimeRangeMake(start: 175, duration: 150, timeScale: 10))
+        com.addAsset(asset: avAsset, timeRange: LDXTimeRangeMake(start: 160, duration: 150, timeScale: 10))
         
         //        let videoComposition = AVMutableVideoComposition()
         //        videoComposition.renderSize = assetVideoTrack.naturalSize

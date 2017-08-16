@@ -27,22 +27,37 @@ public class LDXCompositionVideo {
     }
     
     public func addVideoTrack(videoAsset:AVAsset) {
-        assetVideoTrack = videoAsset.tracks(withMediaType: AVMediaTypeVideo)[0]
         let videoTimeRange = CMTimeRangeMake(kCMTimeZero, videoAsset.duration)
-        try! mutableVideoCompositionTrack.insertTimeRange(videoTimeRange, of: assetVideoTrack!, at: videoCMTime)
-        videoCMTime = videoAsset.duration + videoCMTime
+        addAsset(asset: videoAsset, timeRange: videoTimeRange)
     }
     
     public func addAudioTrack(audioAsset:AVAsset) {
-        assetAudioTrack = audioAsset.tracks(withMediaType: AVMediaTypeAudio)[0]
         let audioTimeRange = CMTimeRangeMake(kCMTimeZero, audioAsset.duration)
-        try! mutableAudioCompositionTrack.insertTimeRange(audioTimeRange, of: assetAudioTrack!, at: audioCMTime)
-        audioCMTime = audioAsset.duration + audioCMTime
+        addAudioTrack(audioAsset: audioAsset, timeRange: audioTimeRange)
     }
     
     public func addAsset(asset:AVAsset) {
+        let videoTimeRange = CMTimeRangeMake(kCMTimeZero, asset.duration)
         addVideoTrack(videoAsset: asset)
         addAudioTrack(audioAsset: asset)
+        addAsset(asset: asset, timeRange: videoTimeRange)
+    }
+    
+    public func addVideoTrack(videoAsset:AVAsset, timeRange:CMTimeRange) {
+        assetVideoTrack = videoAsset.tracks(withMediaType: AVMediaTypeVideo)[0]
+        try! mutableVideoCompositionTrack.insertTimeRange(timeRange, of: assetVideoTrack!, at: videoCMTime)
+        videoCMTime = timeRange.duration + videoCMTime
+    }
+    
+    public func addAudioTrack(audioAsset:AVAsset, timeRange:CMTimeRange) {
+        assetAudioTrack = audioAsset.tracks(withMediaType: AVMediaTypeAudio)[0]
+        try! mutableAudioCompositionTrack.insertTimeRange(timeRange, of: assetAudioTrack!, at: audioCMTime)
+        audioCMTime = timeRange.duration + audioCMTime
+    }
+    
+    public func addAsset(asset:AVAsset, timeRange:CMTimeRange) {
+        addVideoTrack(videoAsset: asset, timeRange: timeRange)
+        addAudioTrack(audioAsset: asset, timeRange: timeRange)
     }
     
 }

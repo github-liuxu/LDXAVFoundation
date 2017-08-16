@@ -16,6 +16,8 @@
 		0CA8A8221F41EC3200393C0B /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA8A8211F41EC3200393C0B /* video.mp4 */; };
 		0CA8A8241F41F01C00393C0B /* LDXCompositionVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8A8231F41F01C00393C0B /* LDXCompositionVideo.swift */; };
 		0CA8A8261F41FEB600393C0B /* LDXExportComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8A8251F41FEB600393C0B /* LDXExportComposition.swift */; };
+		0CA8A8281F44856400393C0B /* LDXCMTimeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8A8271F44856400393C0B /* LDXCMTimeRange.swift */; };
+		0CA8A82A1F44920D00393C0B /* LDXVideoWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8A8291F44920D00393C0B /* LDXVideoWater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,8 @@
 		0CA8A8211F41EC3200393C0B /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		0CA8A8231F41F01C00393C0B /* LDXCompositionVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDXCompositionVideo.swift; sourceTree = "<group>"; };
 		0CA8A8251F41FEB600393C0B /* LDXExportComposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDXExportComposition.swift; sourceTree = "<group>"; };
+		0CA8A8271F44856400393C0B /* LDXCMTimeRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDXCMTimeRange.swift; sourceTree = "<group>"; };
+		0CA8A8291F44920D00393C0B /* LDXVideoWater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDXVideoWater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +81,9 @@
 			children = (
 				0C774F631F3656350022A26D /* AppDelegate.swift */,
 				0C774F651F3656350022A26D /* ViewController.swift */,
+				0CA8A8291F44920D00393C0B /* LDXVideoWater.swift */,
 				0CA8A8231F41F01C00393C0B /* LDXCompositionVideo.swift */,
+				0CA8A8271F44856400393C0B /* LDXCMTimeRange.swift */,
 				0CA8A81F1F41EB0000393C0B /* lvyexianzong.mp3 */,
 				0CA8A8251F41FEB600393C0B /* LDXExportComposition.swift */,
 				0CA8A8211F41EC3200393C0B /* video.mp4 */,
@@ -166,7 +172,9 @@
 			files = (
 				0CA8A8261F41FEB600393C0B /* LDXExportComposition.swift in Sources */,
 				0C774F661F3656350022A26D /* ViewController.swift in Sources */,
+				0CA8A8281F44856400393C0B /* LDXCMTimeRange.swift in Sources */,
 				0C774F641F3656350022A26D /* AppDelegate.swift in Sources */,
+				0CA8A82A1F44920D00393C0B /* LDXVideoWater.swift in Sources */,
 				0CA8A8241F41F01C00393C0B /* LDXCompositionVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
