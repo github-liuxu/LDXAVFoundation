@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         let avAsset = ldxLoadlocalAsset(name: "video", extr: "mp4")
         let audioAsset = ldxLoadlocalAsset(name: "lvyexianzong", extr: "mp3")
         
-        let com = LDXCompositionVideo()
+        let com = LDXComposition()
         com.addVideoTrack(videoAsset: avAsset, timeRange: LDXTimeRangeMake(start: 1, duration: 15))
         com.addAudioTrack(audioAsset: audioAsset, timeRange: LDXTimeRangeMake(start: 175, duration: 150, timeScale: 10))
         com.addAsset(asset: avAsset, timeRange: LDXTimeRangeMake(start: 160, duration: 150, timeScale: 10))
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         let stringPath = NSHomeDirectory()+"/Documents/123.mp4"
         
-        let export = LDXExportComposition(compositionVideo: com,videoPath: stringPath)
+        let export = LDXExportComposition(composition: com,videoPath: stringPath)
         export.exportAsynchronously { (path:String) in
             print(path)
         }

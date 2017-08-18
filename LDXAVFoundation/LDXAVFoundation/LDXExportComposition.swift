@@ -15,9 +15,9 @@ public class LDXExportComposition {
     let exportSession:AVAssetExportSession
     
     
-    init(compositionVideo:LDXCompositionVideo,videoPath:String) {
+    init(composition:LDXComposition,videoPath:String) {
         self.videoPath = videoPath
-        exportSession = AVAssetExportSession(asset: compositionVideo.mutableComposition, presetName: AVAssetExportPresetHighestQuality)!
+        exportSession = AVAssetExportSession(asset: composition.mutableComposition, presetName: AVAssetExportPresetHighestQuality)!
         exportSession.outputFileType = AVFileTypeMPEG4
         exportSession.shouldOptimizeForNetworkUse = true
         exportSession.outputURL = URL(fileURLWithPath: self.videoPath)

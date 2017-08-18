@@ -9,7 +9,7 @@
 import Foundation
 import AVFoundation
 
-public class LDXCompositionVideo {
+public class LDXComposition {
     
     public let mutableComposition:AVMutableComposition = AVMutableComposition()
     let mutableVideoCompositionTrack:AVMutableCompositionTrack
