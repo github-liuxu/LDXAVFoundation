@@ -9,28 +9,23 @@
 import Foundation
 import AVFoundation
 import QuartzCore
+import UIKit
 
 public class LDXVideoWater {
     
-    public var animationTool:AVVideoCompositionCoreAnimationTool {
-        get{
-            return self.animationTool
-        }
-        set{
-            self.animationTool = newValue
-        }
-    }
+    public var animationTool:AVVideoCompositionCoreAnimationTool
     
-    
-    init(renderSize:CGSize,waterLayer:CALayer,layerPosition:CGPoint) {
+    init(videoLayerRenderSize:CGSize,waterLayer:CALayer,layerPosition:CGPoint) {
         
         let parentLayer = CALayer()
         let videoLayer = CALayer()
         
-        parentLayer.frame = CGRect(x:0,y:0,width:renderSize.width,height:renderSize.height)
-        videoLayer.frame = CGRect(x:0,y:0,width:renderSize.width,height:renderSize.height)
-        
+        parentLayer.frame = CGRect(x:0,y:0,width:videoLayerRenderSize.width,height:videoLayerRenderSize.height)
+        parentLayer.backgroundColor = UIColor.clear.cgColor
+        videoLayer.frame = CGRect(x:0,y:0,width:videoLayerRenderSize.width,height:videoLayerRenderSize.height)
+        videoLayer.backgroundColor = UIColor.clear.cgColor
         parentLayer.addSublayer(videoLayer)
+        
         waterLayer.position = layerPosition
         parentLayer.addSublayer(waterLayer)
         

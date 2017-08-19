@@ -12,6 +12,8 @@
 		0C774F691F3656350022A26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F671F3656350022A26D /* Main.storyboard */; };
 		0C774F6B1F3656350022A26D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F6A1F3656350022A26D /* Assets.xcassets */; };
 		0C774F6E1F3656350022A26D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F6C1F3656350022A26D /* LaunchScreen.storyboard */; };
+		0C90DAA41F4724B000873948 /* LDXVideoComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C90DAA31F4724B000873948 /* LDXVideoComposition.swift */; };
+		0C90DAA61F4745D900873948 /* bd_logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C90DAA51F4745D900873948 /* bd_logo1.png */; };
 		0CA8A8201F41EB0000393C0B /* lvyexianzong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA8A81F1F41EB0000393C0B /* lvyexianzong.mp3 */; };
 		0CA8A8221F41EC3200393C0B /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0CA8A8211F41EC3200393C0B /* video.mp4 */; };
 		0CA8A8241F41F01C00393C0B /* LDXComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA8A8231F41F01C00393C0B /* LDXComposition.swift */; };
@@ -41,6 +43,8 @@
 		0C774F6A1F3656350022A26D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C774F6D1F3656350022A26D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C774F6F1F3656350022A26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C90DAA31F4724B000873948 /* LDXVideoComposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDXVideoComposition.swift; sourceTree = "<group>"; };
+		0C90DAA51F4745D900873948 /* bd_logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bd_logo1.png; sourceTree = "<group>"; };
 		0CA8A81F1F41EB0000393C0B /* lvyexianzong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lvyexianzong.mp3; sourceTree = "<group>"; };
 		0CA8A8211F41EC3200393C0B /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		0CA8A8231F41F01C00393C0B /* LDXComposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDXComposition.swift; sourceTree = "<group>"; };
@@ -79,10 +83,12 @@
 		0C774F621F3656350022A26D /* LDXAVFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				0C90DAA51F4745D900873948 /* bd_logo1.png */,
 				0C774F631F3656350022A26D /* AppDelegate.swift */,
 				0C774F651F3656350022A26D /* ViewController.swift */,
 				0CA8A8291F44920D00393C0B /* LDXVideoWater.swift */,
 				0CA8A8231F41F01C00393C0B /* LDXComposition.swift */,
+				0C90DAA31F4724B000873948 /* LDXVideoComposition.swift */,
 				0CA8A8271F44856400393C0B /* LDXCMTimeRange.swift */,
 				0CA8A81F1F41EB0000393C0B /* lvyexianzong.mp3 */,
 				0CA8A8251F41FEB600393C0B /* LDXExportComposition.swift */,
@@ -155,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C90DAA61F4745D900873948 /* bd_logo1.png in Resources */,
 				0CA8A8221F41EC3200393C0B /* video.mp4 in Resources */,
 				0CA8A8201F41EB0000393C0B /* lvyexianzong.mp3 in Resources */,
 				0C774F6E1F3656350022A26D /* LaunchScreen.storyboard in Resources */,
@@ -170,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C90DAA41F4724B000873948 /* LDXVideoComposition.swift in Sources */,
 				0CA8A8261F41FEB600393C0B /* LDXExportComposition.swift in Sources */,
 				0C774F661F3656350022A26D /* ViewController.swift in Sources */,
 				0CA8A8281F44856400393C0B /* LDXCMTimeRange.swift in Sources */,

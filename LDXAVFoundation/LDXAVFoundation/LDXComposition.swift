@@ -60,6 +60,10 @@ public class LDXComposition {
         addAudioTrack(audioAsset: asset, timeRange: timeRange)
     }
     
+    public func renderSize() -> CGSize{
+        return assetVideoTrack!.naturalSize
+    }
+    
 }
 
 func ldxLoadlocalAsset(name:String,extr:String) -> AVAsset {
