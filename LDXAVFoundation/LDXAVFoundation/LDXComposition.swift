@@ -60,8 +60,21 @@ public class LDXComposition {
         addAudioTrack(audioAsset: asset, timeRange: timeRange)
     }
     
+    public func videoTrack() -> AVMutableCompositionTrack {
+        return mutableVideoCompositionTrack
+    }
+    
+    public func audioTrack() -> AVMutableCompositionTrack {
+        return mutableAudioCompositionTrack
+    }
+    
     public func renderSize() -> CGSize{
         return assetVideoTrack!.naturalSize
+    }
+    
+    public func duration() -> Int64 {
+        
+        return 0
     }
     
 }

@@ -28,13 +28,11 @@ class ViewController: UIViewController {
         let videoWater = LDXVideoWater(waterLayer: layer)
         let videoComposition = LDXVideoComposition(videoSize: com.renderSize(), water: videoWater)
         
-        let instruction = AVMutableVideoCompositionInstruction()
-        instruction.timeRange = LDXTimeRangeMake(start: 0, duration: 30)
-        
-        let layerInstruction = AVMutableVideoCompositionLayerInstruction(assetTrack: avAsset.tracks(withMediaType: AVMediaTypeVideo)[0])
-        instruction.layerInstructions = [layerInstruction]
-
-        videoComposition.instruction = [instruction]
+        let instruct = LDXVideoCompositionInstruction(timeRange: LDXTimeRangeMake(start: 0, duration: 30),assetTrack: com.videoTrack())
+        instruct.addOpacityRamp(fromStartOpacity: 1, toEndOpacity: 0, timeRange: LDXTimeRangeMake(start: 3, duration: 2))
+        instruct.addOpacityRamp(1, at: CMTimeMake(6, 1))
+        instruct.addOpacityRamp(fromStartOpacity: 0, toEndOpacity: 1, timeRange: LDXTimeRangeMake(start: 8, duration: 1))
+        videoComposition.instruction = instruct.instruction
         
         let stringPath = NSHomeDirectory()+"/Documents/123.mp4"
         
