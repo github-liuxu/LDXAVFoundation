@@ -12,12 +12,12 @@ import AVFoundation
 public class LDXComposition {
     
     public let mutableComposition:AVMutableComposition = AVMutableComposition()
-    let mutableVideoCompositionTrack:AVMutableCompositionTrack
-    let mutableAudioCompositionTrack:AVMutableCompositionTrack
-    var assetVideoTrack:AVAssetTrack?
-    var assetAudioTrack:AVAssetTrack?
-    var videoCMTime:CMTime
-    var audioCMTime:CMTime
+    private let mutableVideoCompositionTrack:AVMutableCompositionTrack
+    private let mutableAudioCompositionTrack:AVMutableCompositionTrack
+    private var assetVideoTrack:AVAssetTrack?
+    private var assetAudioTrack:AVAssetTrack?
+    private var videoCMTime:CMTime
+    private var audioCMTime:CMTime
     
     init() {
         mutableVideoCompositionTrack = mutableComposition.addMutableTrack(withMediaType: AVMediaTypeVideo, preferredTrackID: kCMPersistentTrackID_Invalid)

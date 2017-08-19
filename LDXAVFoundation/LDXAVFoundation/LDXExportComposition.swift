@@ -11,19 +11,19 @@ import AVFoundation
 
 public class LDXExportComposition {
     
-    var videoPath:String
-    let exportSession:AVAssetExportSession
-//    var videoComposition:LDXVideoComposition {
-//        get{
-//            return self.videoComposition
-//        }
-//        set{
-//            self.videoComposition = newValue
-//            exportSession.videoComposition = self.videoComposition.videoComposition
-//        }
-//    }
+    private var videoPath:String
+    private let exportSession:AVAssetExportSession
+    private var _videoComposition:LDXVideoComposition?
     
-    
+    public var videoComposition:LDXVideoComposition {
+        get{
+            return _videoComposition!
+        }
+        set{
+            _videoComposition = newValue
+            exportSession.videoComposition = _videoComposition?.videoComposition
+        }
+    }
     
     init(composition:LDXComposition,videoPath:String) {
         self.videoPath = videoPath
@@ -31,10 +31,6 @@ public class LDXExportComposition {
         exportSession.outputFileType = AVFileTypeMPEG4
         exportSession.shouldOptimizeForNetworkUse = true
         exportSession.outputURL = URL(fileURLWithPath: self.videoPath)
-    }
-    
-    public func setVideoComposition(videoComposition:LDXVideoComposition) {
-        exportSession.videoComposition = videoComposition.videoComposition
     }
     
     public func exportAsynchronously(completionHandler handler: @escaping (_ path:String) -> Swift.Void) {
