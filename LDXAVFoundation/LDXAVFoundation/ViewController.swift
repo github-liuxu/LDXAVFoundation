@@ -38,10 +38,12 @@ class ViewController: UIViewController {
         
         let export = LDXExportComposition(composition: com,videoPath: stringPath)
         export.videoComposition = videoComposition
-        export.exportAsynchronously { (path:String) in
+
+        export.exportAsynchronously({ (progress:Float) in
+            print(progress)
+        }) { (path:String) in
             print(path)
         }
-
         
     }
     
