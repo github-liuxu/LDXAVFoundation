@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         
         let layer = UIImageView(image: UIImage(named: "bd_logo1.png")).layer
         layer.frame = CGRect(x: 30, y: 0, width: 120, height: 60)
+                
         let videoWater = LDXVideoWater(waterLayer: layer)
         let videoComposition = LDXVideoComposition(videoSize: com.renderSize(), water: videoWater)
         

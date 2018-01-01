@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C6F3D5D1F76A34000CAFE1B /* LDXAssetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F3D5C1F76A34000CAFE1B /* LDXAssetReader.swift */; };
 		0C774F641F3656350022A26D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C774F631F3656350022A26D /* AppDelegate.swift */; };
 		0C774F661F3656350022A26D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C774F651F3656350022A26D /* ViewController.swift */; };
 		0C774F691F3656350022A26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C774F671F3656350022A26D /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C6F3D5C1F76A34000CAFE1B /* LDXAssetReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDXAssetReader.swift; sourceTree = "<group>"; };
 		0C774F601F3656350022A26D /* LDXAVFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDXAVFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C774F631F3656350022A26D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C774F651F3656350022A26D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				0CA8A8271F44856400393C0B /* LDXCMTimeRange.swift */,
 				0CA8A81F1F41EB0000393C0B /* lvyexianzong.mp3 */,
 				0CA8A8251F41FEB600393C0B /* LDXExportComposition.swift */,
+				0C6F3D5C1F76A34000CAFE1B /* LDXAssetReader.swift */,
 				0CA8A8211F41EC3200393C0B /* video.mp4 */,
 				0C774F671F3656350022A26D /* Main.storyboard */,
 				0C774F6A1F3656350022A26D /* Assets.xcassets */,
@@ -185,6 +188,7 @@
 				0C774F661F3656350022A26D /* ViewController.swift in Sources */,
 				0CA8A8281F44856400393C0B /* LDXCMTimeRange.swift in Sources */,
 				0C90DAA81F484D2800873948 /* LDXVideoCompositionInstruction.swift in Sources */,
+				0C6F3D5D1F76A34000CAFE1B /* LDXAssetReader.swift in Sources */,
 				0C774F641F3656350022A26D /* AppDelegate.swift in Sources */,
 				0CA8A82A1F44920D00393C0B /* LDXVideoWater.swift in Sources */,
 				0CA8A8241F41F01C00393C0B /* LDXComposition.swift in Sources */,

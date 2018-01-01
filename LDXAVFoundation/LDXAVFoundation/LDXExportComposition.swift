@@ -15,7 +15,6 @@ public class LDXExportComposition {
     private let exportSession:AVAssetExportSession
     private var _videoComposition:LDXVideoComposition?
     private var progress:((_ progress:Float)->Swift.Void)?
-//    private var timer:Timer?
     
     public var videoComposition:LDXVideoComposition {
         get{
