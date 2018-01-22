@@ -25,6 +25,14 @@ class ViewController: UIViewController {
         
         let layer = UIImageView(image: UIImage(named: "bd_logo1.png")).layer
         layer.frame = CGRect(x: 30, y: 0, width: 120, height: 60)
+        let ani = CABasicAnimation(keyPath: "transform.rotation.z")
+        ani.fromValue = 0
+        ani.toValue = 2*Double.pi
+        ani.duration = 8.0
+        ani.repeatCount = HUGE
+        ani.isRemovedOnCompletion = false
+        ani.beginTime = AVCoreAnimationBeginTimeAtZero
+        layer.add(ani, forKey: "transform")
                 
         let videoWater = LDXVideoWater(waterLayer: layer)
         let videoComposition = LDXVideoComposition(videoSize: com.renderSize(), water: videoWater)
