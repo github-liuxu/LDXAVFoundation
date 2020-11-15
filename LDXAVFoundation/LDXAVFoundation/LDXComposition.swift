@@ -20,37 +20,37 @@ public class LDXComposition {
     private var audioCMTime:CMTime
     
     init() {
-        mutableVideoCompositionTrack = mutableComposition.addMutableTrack(withMediaType: AVMediaTypeVideo, preferredTrackID: kCMPersistentTrackID_Invalid)
-        mutableAudioCompositionTrack = mutableComposition.addMutableTrack(withMediaType: AVMediaTypeAudio, preferredTrackID: kCMPersistentTrackID_Invalid)
-        videoCMTime = kCMTimeZero
-        audioCMTime = kCMTimeZero
+        mutableVideoCompositionTrack = mutableComposition.addMutableTrack(withMediaType: AVMediaType.video, preferredTrackID: kCMPersistentTrackID_Invalid)!
+        mutableAudioCompositionTrack = mutableComposition.addMutableTrack(withMediaType: AVMediaType.audio, preferredTrackID: kCMPersistentTrackID_Invalid)!
+        videoCMTime = CMTime.zero
+        audioCMTime = CMTime.zero
     }
     
     public func addVideoTrack(videoAsset:AVAsset) {
-        let videoTimeRange = CMTimeRangeMake(kCMTimeZero, videoAsset.duration)
+        let videoTimeRange = CMTimeRangeMake(start: CMTime.zero, duration: videoAsset.duration)
         addAsset(asset: videoAsset, timeRange: videoTimeRange)
     }
     
     public func addAudioTrack(audioAsset:AVAsset) {
-        let audioTimeRange = CMTimeRangeMake(kCMTimeZero, audioAsset.duration)
+        let audioTimeRange = CMTimeRangeMake(start: CMTime.zero, duration: audioAsset.duration)
         addAudioTrack(audioAsset: audioAsset, timeRange: audioTimeRange)
     }
     
     public func addAsset(asset:AVAsset) {
-        let videoTimeRange = CMTimeRangeMake(kCMTimeZero, asset.duration)
+        let videoTimeRange = CMTimeRangeMake(start: CMTime.zero, duration: asset.duration)
         addVideoTrack(videoAsset: asset)
         addAudioTrack(audioAsset: asset)
         addAsset(asset: asset, timeRange: videoTimeRange)
     }
     
     public func addVideoTrack(videoAsset:AVAsset, timeRange:CMTimeRange) {
-        assetVideoTrack = videoAsset.tracks(withMediaType: AVMediaTypeVideo)[0]
+        assetVideoTrack = videoAsset.tracks(withMediaType: AVMediaType.video)[0]
         try! mutableVideoCompositionTrack.insertTimeRange(timeRange, of: assetVideoTrack!, at: videoCMTime)
         videoCMTime = timeRange.duration + videoCMTime
     }
     
     public func addAudioTrack(audioAsset:AVAsset, timeRange:CMTimeRange) {
-        assetAudioTrack = audioAsset.tracks(withMediaType: AVMediaTypeAudio)[0]
+        assetAudioTrack = audioAsset.tracks(withMediaType: AVMediaType.audio)[0]
         try! mutableAudioCompositionTrack.insertTimeRange(timeRange, of: assetAudioTrack!, at: audioCMTime)
         audioCMTime = timeRange.duration + audioCMTime
     }

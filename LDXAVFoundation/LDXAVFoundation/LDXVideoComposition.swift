@@ -24,7 +24,7 @@ public class LDXVideoComposition {
         }
     }
     public let videoComposition:AVMutableVideoComposition
-    var frameDuration:CMTime = CMTimeMake(1, 30)
+    var frameDuration:CMTime = CMTimeMake(value: 1, timescale: 30)
     
     init(videoSize:CGSize,water:LDXVideoWater?) {
         self.renderSize = videoSize;

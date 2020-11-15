@@ -29,7 +29,7 @@ public class LDXExportComposition {
     init(composition:LDXComposition,videoPath:String) {
         self.videoPath = videoPath
         exportSession = AVAssetExportSession(asset: composition.mutableComposition, presetName: AVAssetExportPresetHighestQuality)!
-        exportSession.outputFileType = AVFileTypeMPEG4
+        exportSession.outputFileType = AVFileType.mp4
         exportSession.shouldOptimizeForNetworkUse = true
         exportSession.outputURL = URL(fileURLWithPath: self.videoPath)
     }
@@ -45,7 +45,7 @@ public class LDXExportComposition {
         timer.fire()
         
         exportSession.exportAsynchronously { 
-            if self.exportSession.status == AVAssetExportSessionStatus.completed {
+            if self.exportSession.status == AVAssetExportSession.Status.completed {
                 handler(self.videoPath)
             } else {
                 print(self.exportSession.status)

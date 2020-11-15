@@ -26,5 +26,5 @@ public func LDXTimeRangeMake(start:Int64,duration:Int64) -> CMTimeRange{
     返回CMTimeRange
  */
 public func LDXTimeRangeMake(start:Int64,duration:Int64,timeScale:Int32) -> CMTimeRange{
-    return CMTimeRangeMake(CMTimeMake(start, timeScale), CMTimeMake(duration, timeScale))
+    return CMTimeRangeMake(start: CMTimeMake(value: start, timescale: timeScale), duration: CMTimeMake(value: duration, timescale: timeScale))
 }

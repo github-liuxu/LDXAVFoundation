@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         
         let instruct = LDXVideoCompositionInstruction(timeRange: LDXTimeRangeMake(start: 0, duration: 30),assetTrack: com.videoTrack())
         instruct.addOpacityRamp(fromStartOpacity: 1, toEndOpacity: 0, timeRange: LDXTimeRangeMake(start: 3, duration: 2))
-        instruct.addOpacityRamp(1, at: CMTimeMake(6, 1))
+        instruct.addOpacityRamp(1, at: CMTimeMake(value: 6, timescale: 1))
         instruct.addOpacityRamp(fromStartOpacity: 0, toEndOpacity: 1, timeRange: LDXTimeRangeMake(start: 8, duration: 1))
         videoComposition.instruction = instruct.instruction
         
